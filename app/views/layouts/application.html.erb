@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+  <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+  <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+  <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+  <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Stackmine | A lean web development workshop</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <link rel="author" href="https://plus.google.com/u/0/109859280204979591787/about"/>
+
+      <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>  
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  </head>
+
+  <body class="loaded">
+    <nav class="navbar navbar-default navbar-fixed-top smTopNavBar " id="nav" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a id="logo" href="http://stackmine.com" class="pull-left">STACKMINE</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navigation">
+            <li>
+              <a href="#slide-1" class="active" data-scroll="home">Home</a>
+            </li> 
+          </ul>
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#slide-2" data-scroll="ehatwedo">What we do</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#slide-3" data-scroll="portfolio">Portfolio</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#slide-4" data-scroll="team">Team</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#slide-5" data-scroll="client">Client</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#slide-6" data-scroll="contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="preload">
+      <img src="assets/bcg_slide-5.jpg">
+      <img src="assets/bcg_slide-6.jpg">
+      <img src="assets/bcg_slide-1.jpg">
+      <img src="assets/bcg_slide-3.jpg">
+      <img src="assets/bcg_slide-5.jpg">
+      <img src="assets/bcg_slide-4.jpg">
+      <img src="assets/bcg_slide-2.jpg">
+    </div>
+      
+    <main>
+      <%= yield %>
+    </main>
+    <!-- Modal -->
+      <div class="modal fade" id="myModal1" tabindex="-1" role="dialog"  aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <h3 class="modal-title">Agent Methods</h3>
+              <p class="modal-image"><img src="http://stackmine.com/wp-content/uploads/2012/11/agentMethods-400.png" class="img-responsive"></p>
+              <p class="modal-data">
+                <span class="first"><i class="icon-user"></i><strong>Client:</strong> Agent Methods</span>
+                <span><i class="icon-calendar"></i><strong>Date:</strong> Nov 14,2012</span>
+                <span class="first"><i class="icon-certificate"></i><strong>Skill:</strong> Ruby on Rails</span>
+                <span class="last"><i class="icon-share"></i><a href="http://www.agentmethods.com/">Launch Project</a></span>
+              </p>
+            </div>
+            <p class="siteinfo">AgentMethods is a tool to launch and manage high quality insurance agent websites. </p>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="myModal2" tabindex="-1" role="dialog"  aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <h3 class="modal-title">Getchute</h3>
+              <p class="modal-image "><img src="http://stackmine.com/wp-content/uploads/2012/11/getchute-400.png" class="img-responsive"></p>
+              <p class="modal-data">
+                <span class="first"><i class="icon-user"></i><strong>Client:</strong> Chute Inc.</span>
+                <span><i class="icon-calendar"></i><strong>Date:</strong> Nov 14,2012</span>
+                <span class="first"><i class="icon-certificate"></i><strong>Skill:</strong> Ruby, Ruby on Rails, Front end </span>
+                <span class="last"><i class="icon-share"></i><a href="http://www.getchute.com/">Launch Project</a></span>
+              </p>  
+            </div>
+            <p class="siteinfo">GetChute is a media management API across mobile (iPhone and Android) and web.</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="myModal3" tabindex="-1" role="dialog"  aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <h3 class="modal-title">Tutonic</h3>
+              <p class="modal-image img-responsive"><img src="http://stackmine.com/wp-content/uploads/2012/11/tutonic-400.png" class="img-responsive"></p>
+              <p class="modal-data">
+                <span class="first"><i class="icon-user"></i><strong>Client:</strong> Tutonic LLC.</span>
+                <span><i class="icon-calendar"></i><strong>Date:</strong> Nov 14,2012</span>
+                <span class="first"><i class="icon-certificate"></i><strong>Skill:</strong> Ruby on Rails,  Front End</span>
+                <span class="last"><i class="icon-share"></i><a href="https://www.tutonic.com/">Launch Project</a></span>
+              </p>
+            </div>
+            <p class="siteinfo">Tutonic is a community marketplace for Tutors and Students.</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="myModal4" tabindex="-1" role="dialog"  aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <h3 class="modal-title">Kinesis</h3>
+              <p class="modal-image img-responsive"><img src="http://stackmine.com/wp-content/uploads/2012/11/kinesis-400.png" class="img-responsive"></p>
+              <p class="modal-data">
+                <span class="first"><i class="icon-user"></i><strong>Client:</strong> Kinesis (Co Founded)</span>
+                <span ><i class="icon-calendar"></i><strong>Date:</strong> Nov 14,2012</span>
+                <span class="first"><i class="icon-certificate"></i><strong>Skill:</strong> Ruby on Rails, JS, Front end</span>
+                <span class="last"><i class="icon-share"></i><a href="http://kinesis-io.github.io/">Launch Project</a>
+                </span>
+              </p>
+            </div>
+            <p class="siteinfo">A native development framework that allows you to author gesture based applications with HTML, Css and JavaScript.</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="myModal5" tabindex="-1" role="dialog"  aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+              <h3 class="modal-title">Yutongo</h3>
+              <p class="modal-image img-responsive"><img src="http://stackmine.com/wp-content/uploads/2012/11/yutongo-400.png" class="img-responsive"></p>
+              <p class="modal-data">
+                <span class="first"><i class="icon-user"></i><strong>Client:</strong> Yutongo </span>
+                <span><i class="icon-calendar"></i><strong>Date:</strong> Nov 14,2012</span>
+                <span class="first"><i class="icon-certificate"></i><strong>Skill:</strong> Ruby on Rails, Front End</span>
+                <span class="last"><i class="icon-share"></i><a href="http://www.yutongo.com/">Launch Project</a></span>
+              </p>
+            </div>
+            <p class="siteinfo">Yutongo is a unique brain storming and collaboration application.</p>
+          </div>
+        </div>
+      </div>
+     <!--modal ends--> 
+
+  </body>
+</html>
