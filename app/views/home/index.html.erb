@@ -266,7 +266,7 @@
                   <div class="form-group col-md-5">
                     <label class="sr-only " for="exampleInputEmail2"></label>
                     <!-- <input type="name" class="form-control field"  placeholder="Name*" autocomplete="off"> -->
-                    <%= form.text_field :name, :placeholder => "name", :required => true, :class => "form-control field", :autocomplete => "off" %>
+                    <%= form.text_field :name, :placeholder => "name", :required => true, :class => "form-control field", :autocomplete => "off", :title => "Plz enter ur name" %>
                   </div>
                   <div class="form-group col-md-5">
                     <label class="sr-only" for="exampleInputPassword2"></label>
@@ -278,12 +278,12 @@
                   <div class="form-group col-md-5">
                     <label class="sr-only" for="exampleInputEmail2"></label>
                     <!-- <input type="text" class="form-control field"  placeholder="Budget*" autocomplete="off"> -->
-                    <%= form.text_field :budget,:placeholder => "budget",:class => "form-control field", :autocomplete => "off" %>
+                    <%= form.text_field :budget,:placeholder => "budget",:class => "form-control field", :autocomplete => "off", :type => "number" %>
                   </div>
                   <div class="form-group col-md-5">
                     <label class="sr-only" for="exampleInputPassword2">Timeframe</label>
                     <!-- <input type="text" class="form-control field"  placeholder="Timeframe*" autocomplete="off"> -->
-                    <%= form.text_field :timeframe,:placeholder => "timeframe",:class => "form-control field", :autocomplete => "off" %>
+                    <%= form.text_field :timeframe,:placeholder => "timeframe",:class => "form-control field", :autocomplete => "off", :type => "number" %>
                   </div>
                 </div>
                 <div class="row">
@@ -301,7 +301,7 @@
         </div>
          <hr>
          <div class="section-footer">
-           Copyright © 2012 &nbsp;
+           Copyright © 2012 by 
             <a title="A lean web development workshop" href="http://stackmine.com">Stackmine</a>
             <br>
             A lean web development workshop 

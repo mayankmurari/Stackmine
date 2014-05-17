@@ -5,13 +5,19 @@ class ContactsController < ApplicationController
     @contact = Contact.new
   end
 
+  def show
+    @contact = Contact.new
+  end
+
 
   def create
     @contact = Contact.new(contact_params)
 
     respond_to do |format|
       if @contact.save
-        format.html { redirect_to '/', notice: 'Contact was successfully posted.' }
+        flash[:notice] = 'Contact was successfully posted.'
+        format.html { redirect_to '/' }
+
       else
         format.html { redirect_to '/',notice: 'Errors' }
       end

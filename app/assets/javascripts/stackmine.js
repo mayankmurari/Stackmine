@@ -39,6 +39,70 @@ if (windscroll >= 0) {
   } 
 }).scroll();
 
+// $(document).ready(function() {
+//     var elements = document.getElementsById("#contact_name");
+//     for (var i = 0; i < elements.length; i++) {
+//         elements[i].oninvalid = function(e) {
+//             e.target.setCustomValidity("");
+//             if (!e.target.validity.valid) {
+//                 e.target.setCustomValidity("This field cannot be left blank");
+//             }
+//         };
+//         elements[i].oninput = function(e) {
+//             e.target.setCustomValidity("");
+//         };
+//     }
+// })
+$(document).ready(function() {
+  
+  // Setup variables
+  $window = $(window);
+  $slide = $('.homeSlide');
+  $body = $('body');
+
+    //FadeIn all sections   
+  $body.imagesLoaded( function() {
+    setTimeout(function() {
+          
+          // Resize sections
+          adjustWindow();
+          
+          // Fade in sections
+        $body.removeClass('loading').addClass('loaded');
+    }, 800);
+  });
+  
+  function adjustWindow(){
+    
+    // Init Skrollr
+    var s = skrollr.init({
+        forceHeight: false
+    });
+    
+    // Get window size
+      winH = $window.height();
+      // Keep minimum height 550
+      if(winH <= 550) {
+      winH = 550;
+    } 
+      
+      // Resize our slides
+      $slide.height(winH);
+      
+      // Refresh Skrollr after resizing our sections
+      s.refresh($('.homeSlide'));
+      
+  }
+    
+});
+
+// $(document).ready(function() {
+//   var elements = document.getElementById("contact_name");
+//     elements.oninvalid = function(e) {
+//       e.target.setCustomValidity("Please enter your name");
+//     };
+// });
+
 
 
 
