@@ -6,6 +6,7 @@ gem 'haml-rails'
 # Use sqlite3 as the database for Active Record
 group :development do
   gem 'sqlite3'
+  gem 'debugger'
 end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
@@ -21,7 +22,7 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
-gem 'debugger'
+
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
